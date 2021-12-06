@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GCU Cyber CTF</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body onload="typeWriter();">
+    <img
+      id="landing-page-logo"
+      src="cce-gcu-logo-white.png"
+      alt="GCU Cyber Center of Excellence Logo"
+    />
+    <div style="position: relative; top: -2em">
+      <h1 id="landing-msg"></h1>
+      <br />
+      <a target="_blank" href="https://gcu.ctfd.io/register"
+        ><button
+          class="land-btns"
+          id="register-btn"
+          onmouseover="two()"
+          onmouseout="oneBlank()"
+        >
+          New?<br />Register Here!
+        </button></a
+      >
+      <a href="info.html"
+        ><button
+          class="land-btns"
+          id="start-btn"
+          onmouseover="one()"
+          onmouseout="oneBlank()"
+        >
+          Already registered?<br />Click here!
+        </button></a
+      >
+    </div>
+    <script src="land-script.js" async defer></script>
+  </body>
+</html>
