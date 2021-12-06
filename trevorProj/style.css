@@ -1,0 +1,176 @@
+/*Here are all of my variables used throughout the project*/
+:root {
+  --gcu-light-purple: #7e2fee;
+  --gcu-purple: #511e99;
+  --gcu-dark-purple: #240d44;
+}
+/*The main font the site will use*/
+@font-face {
+  font-family: Varela;
+  src: url(fonts/Varela-Regular.ttf);
+}
+
+/*This is all the styling for the starting page*/
+#index-body {
+  text-align: center;
+  position: relative;
+  font-family: Varela;
+  background-color: var(--gcu-dark-purple);
+  color: white;
+  position: relative;
+}
+
+#index-logo {
+  position: inherit;
+  top: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 250px;
+}
+#index-h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+#index-p {
+  font-size: 32px;
+}
+
+#index-button {
+  transition: 1s ease 0s;
+
+  cursor: pointer;
+  color: white;
+  width: 5em;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 50px;
+  border: 3px solid var(--gcu-light-purple);
+  border-radius: 10px 10px 10px 10px;
+  background-color: black;
+}
+
+/*This deletes the text when i hover the button*/
+#index-button:hover span {
+  display: none;
+}
+/*This changes the content when its hovered*/
+#index-button:hover:before {
+  content: "GLHF!";
+}
+
+/*style for hidden.html*/
+
+#chatbox{
+  box-shadow: 5px 5px 10px black;
+  display: block;
+  position: relative;
+  background-color: var(--gcu-purple);
+  width: 600px;
+  height: 900px;
+  border-radius: 15px 15px 15px 15px;
+  margin: auto;
+}
+.message-bubble-trevor{
+  font-family: Varela;
+  font-size: 24px;
+  color: white;
+
+
+  text-align: left;
+  display: block;
+  margin-right: auto;
+
+  position: relative;
+  
+  margin-left: 10px;
+  margin-bottom: 30px;
+
+
+  
+  background-color: black;
+  padding: 20px;
+  
+  height: fit-content;
+  width: fit-content;
+
+  border-radius: 0px 25px 25px 25px;
+  border: white 2px solid;
+ 
+}
+.message-bubble-thunder{
+  color: white;
+  font-family: Varela;
+  font-size: 24px;
+
+  text-align: right;
+  
+  display: block;
+
+  position: relative;
+  
+  margin-left: auto;
+  background-color: black;
+ 
+  padding: 20px;
+ 
+  height: fit-content;
+  width: fit-content;
+ 
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border-radius: 25px 0px 25px 25px;
+  border: white 2px solid;
+
+  
+}
+#chatbox-header{
+position: relative;
+background-color: black;
+width: 600px;
+border-radius: 15px 15px 0px 0px;
+height: 100px;
+margin-bottom: 10px;
+}
+.profile-pic{
+  position: absolute;
+  display: block;
+ 
+  margin: 8px 0px 8px 10px;
+  height:80px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+#thunder-username{
+  position: absolute;
+  top: -55px;
+  left: 125px;
+  color: var(--gcu-light-purple);
+  
+  font-size: 64px;
+  font-family: Varela;
+  
+}
+#active-text{
+  position: relative;
+  top:76px;
+  left: -92px;
+}
+#admin-form{
+  position: relative;
+  top:300px;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--gcu-purple);
+  border: 3px solid black;
+  border-radius: 10px 10px 10px 10px;
+  width: fit-content;
+  height: fit-content;
+}
+#admin-button{
+  cursor: pointer;
+}

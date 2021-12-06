@@ -1,0 +1,250 @@
+/*Styling for homepage.html*/
+
+@font-face {
+  font-family: Varela;
+  src: url(fonts/Varela-Regular.ttf);
+}
+:root {
+  --gcu-light-purple: #7e2fee;
+  --gcu-purple: #511e99;
+  --gcu-dark-purple: #240d44;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a,
+button {
+  font-family: "Varela", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  position: relative;
+  left: -1200px;
+  cursor: pointer;
+  height: 60px;
+  width: 150px;
+}
+.nav__links {
+  list-style: none;
+  position: relative;
+  left: -60px;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+  color: var(--gcu-light-purple);
+}
+
+button {
+  padding: 9px 25px;
+  margin-left: -30px;
+  background-color: var(--gcu-purple);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: salmon;
+  color: black;
+}
+.homepage-container {
+  position: relative;
+
+  width: 100%;
+  height: 80vh;
+  animation: animate 12s ease-in-out infinite;
+  background-size: contain;
+}
+.homepage-outer {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background: rgba(0, 0, 0, 0.75);
+}
+.homepage-details {
+  position: relative;
+  display: block;
+  margin: auto;
+  text-align: center;
+  background-color: none;
+  top: 100px;
+}
+.homepage-details > h1 {
+  font-family: "Varela", sans-serif;
+  color: white;
+  font-size: 100px;
+}
+.homepage-details > h2 {
+  font-family: "Varela", sans-serif;
+  color: white;
+
+  font-size: 56px;
+  font-style: italic;
+}
+@keyframes animate {
+  0%,
+  100% {
+    background-image: url(images/wideshot\ CCE.jpg);
+  }
+  33% {
+    background-image: url(images/server-sides.jpg);
+  }
+  66% {
+    background-image: url(images/computer-server.jpg);
+  }
+}
+
+/*Here is the code for the projects page*/
+.wrapper {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  background-color: none;
+}
+.wrapper > div > h2 {
+  font-family: "Varela", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+
+  text-align: center;
+}
+.wrapper > div > p {
+  text-align: center;
+  font-family: "Varela", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+.wrapper > div > img {
+  display: block;
+  margin: auto;
+}
+.wrapper > div {
+  padding: 1em;
+
+  margin: 30px;
+  box-shadow: 0 0 20px 5px;
+  height: fit-content;
+}
+
+.wrapper > div:nth-child(odd) {
+  background-color: var(--gcu-light-purple);
+  border: 1px solid var(--gcu-light-purple);
+  border-radius: 10px 10px 10px 10px;
+  height: 835px;
+}
+.wrapper > div:nth-child(even) {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px 10px 10px 10px;
+  height: 835px;
+}
+
+#projects-header {
+  position: fixed;
+  top: 100px;
+  left: 0;
+
+  border: 3px solid black;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--gcu-light-purple);
+  text-align: center;
+  font-family: "Varela", sans-serif;
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+.projects-picture {
+  display: block;
+  margin: auto;
+  border: black solid 3px;
+  width: 600px;
+  height: 800px;
+}
+
+.projects-slides {
+  display: none;
+}
+#special-id {
+  font-size: 1.75rem;
+}
+
+/*Style rules for contact page*/
+#contact-us-div {
+  position: relative;
+  top: 200px;
+  display: block;
+  margin: auto;
+  padding: 5px;
+  width: 900px;
+  height: fit-content;
+  background-color: var(--gcu-light-purple);
+
+  box-shadow: 0 0 20px 5px;
+
+  border-radius: 10px 10px 10px 10px;
+}
+#contact-us-div > h2 {
+  text-align: center;
+  color: white;
+  font-family: "Varela", sans-serif;
+  font-size: 30px;
+}
+#contact-us-email > h1 {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  text-align: center;
+  color: white;
+  font-family: "Varela", sans-serif;
+  font-size: 64px;
+  cursor: pointer;
+  transition: 0.5s ease 0s;
+}
+#contact-us-email > h1:hover {
+  color: salmon;
+}
+
+/* style rules for the about page */
+#about-div {
+  display: block;
+  margin: auto;
+  background-color: black;
+  padding: 10px;
+  width: 1000px;
+  height: 1050px;
+  box-shadow: 0 0 20px 5px;
+
+  border-radius: 10px 10px 10px 10px;
+}
+#about-div > img {
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: 300px;
+  margin-bottom: -60px;
+}
+#about-div > p {
+  font-family: "Varela", sans-serif;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
